@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentLayout"
+    tools:context=".CatlogVarrientActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:cardElevation="7dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize">
+
+                    <LinearLayout
+                        android:id="@+id/menuLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/ic_baseline_chevron_left_24" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="4dp"
+                            android:gravity="center_vertical"
+                            android:text=" Catalog Upload"
+                            android:textColor="@color/orange"
+                            android:textSize="15dp"
+                            android:textStyle="normal"></TextView>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#D5E2E8"></View>
+
+            <LinearLayout
+                android:id="@+id/addVarients"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_margin="9dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity=""
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_marginStart="20dp"
+                        android:layout_width="70dp"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/tick">
+                        </ImageView>
+                        <TextView
+                            android:layout_marginTop="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Add"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"
+                            android:gravity="center">
+                        </TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Product"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"
+                            android:gravity="center">
+                        </TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginStart="40dp"
+                        android:layout_width="70dp"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/tick">
+                        </ImageView>
+                        <TextView
+                            android:layout_marginTop="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Basic"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"
+                            android:gravity="center">
+                        </TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Details"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"
+                            android:gravity="center">
+                        </TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginStart="40dp"
+                        android:layout_width="70dp"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/tick">
+                        </ImageView>
+                        <TextView
+                            android:layout_marginTop="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Add"
+                            android:textStyle="normal"
+                            android:textColor="@color/orange"
+                            android:gravity="center">
+                        </TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Varients(s)"
+                            android:textStyle="normal"
+                            android:textColor="@color/orange"
+                            android:gravity="center">
+                        </TextView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#C3DEEA"></View>
+
+                <LinearLayout
+                    android:layout_margin="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="#EFEAE1"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Size Details"
+                                android:gravity="center_vertical"
+                                android:layout_marginStart="9dp"
+                                android:textColor="@color/black"
+                                android:textStyle="normal">
+                            </TextView>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|end"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="Add Size Chart"
+                                    android:gravity="center_vertical"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/rubyColor"
+                                    android:textSize="14dp">
+                                </TextView>
+                                <LinearLayout
+                                    android:layout_width="30dp"
+                                    android:gravity="center_vertical"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/ic_baseline_chevron_right_24">
+                                    </ImageView>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="9dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text=" Size:"
+                                        android:gravity="center_vertical"
+                                        android:textSize="17dp"
+                                        android:textColor="@color/black">
+                                    </TextView>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text=" 5XL"
+                                        android:gravity="center_vertical"
+                                        android:textSize="13dp"
+                                        android:textColor="@color/blue">
+                                    </TextView>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_marginStart="50dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+                                    <LinearLayout
+                                        android:layout_width="100dp"
+                                        android:layout_height="40dp"
+                                        android:background="@drawable/newbg">
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/transparent_white"
+                                            android:gravity="center"
+                                            android:hint="Inventary"
+                                            android:inputType="number"
+                                            android:textColor="@color/black"
+                                            android:textColorHint="@color/grey"
+                                            android:textSize="14dp"></EditText>
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="100dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginStart="10dp"
+                                        android:background="@drawable/newbg">
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/transparent_white"
+                                            android:gravity="center"
+                                            android:hint="SKU ID"
+                                            android:inputType="number"
+                                            android:textColor="@color/black"
+                                            android:textColorHint="@color/grey"
+                                            android:textSize="14dp"></EditText>
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp">
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/goShop"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Review"
+                            android:textSize="14dp"
+                            android:textColor="@color/white"
+                            android:backgroundTint="@color/rubyColor"
+                            android:textStyle="bold"
+                            android:layout_marginTop="15dp">
+                        </com.google.android.material.button.MaterialButton>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

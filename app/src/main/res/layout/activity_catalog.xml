@@ -1,0 +1,1286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/parentLayout"
+    tools:context=".Activity.CatalogActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:cardElevation="7dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize">
+
+                    <LinearLayout
+                        android:id="@+id/menuLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/ic_baseline_chevron_left_24" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="4dp"
+                            android:gravity="center_vertical"
+                            android:text=" Catalog Upload"
+                            android:textColor="@color/lightblue"
+                            android:textSize="15dp"
+                            android:textStyle="normal"></TextView>
+
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#D5E2E8"></View>
+
+            <LinearLayout
+                android:id="@+id/addProduct"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="9dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/untick"></ImageView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:gravity="center"
+                                    android:text="Add"
+                                    android:textColor="@color/lightblue"
+                                    android:textStyle="normal"></TextView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Product"
+                                    android:textColor="@color/lightblue"
+                                    android:textStyle="normal"></TextView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/untick"></ImageView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:gravity="center"
+                                    android:text="Basic"
+                                    android:textColor="@color/grey3"
+                                    android:textStyle="normal"></TextView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Details"
+                                    android:textColor="@color/grey3"
+                                    android:textStyle="normal"></TextView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/untick"></ImageView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:gravity="center"
+                                    android:text="Add"
+                                    android:textColor="@color/grey3"
+                                    android:textStyle="normal"></TextView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Varients(s)"
+                                    android:textColor="@color/grey3"
+                                    android:textStyle="normal"></TextView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#C3DEEA"></View>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:fontFamily="@font/mulish"
+                        android:text="Upload Product"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="normal"></TextView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginStart="9dp"
+                        android:background="@color/black"></View>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/productType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/sell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sell"
+                        android:textColor="@color/lightblue"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/rent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="Rent"
+                        android:textColor="@color/lightblue"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/Both"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="Both"
+                        android:textColor="@color/lightblue"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#C3DEEA"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:gravity="center|end"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="Product Type"
+                                android:textColor="@color/grey"
+                                android:textSize="12dp"
+                                android:textStyle="normal" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="9dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:src="@drawable/info"></ImageView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/newbg">
+
+                                <TextView
+                                    android:id="@+id/productTypeTextView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/transparent_white"
+                                    android:gravity="center"
+                                    android:hint="Select Upload product"
+                                    android:text=""
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/grey3"
+                                    android:textSize="14dp"></TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Product Image"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="90dp"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="@color/rubyColor"
+                            app:cardCornerRadius="5dp">
+
+                            <ImageView
+                                android:id="@+id/imgProfile"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/noimg"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"></ImageView>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="40dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/openCamera"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="#DCE2E4"
+                            app:cardCornerRadius="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/upload"></ImageView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Upload"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"></TextView>
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="9dp"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="10dp"
+                                android:gravity="center"
+                                android:text="Product Category"
+                                android:textColor="@color/grey"
+                                android:textSize="13dp"
+                                android:textStyle="normal"></TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/newbg">
+
+                                <TextView
+                                    android:id="@+id/productCategory"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/transparent_white"
+                                    android:gravity="center"
+                                    android:hint="Select your product Category"
+                                    android:text=""
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/grey3"
+                                    android:textSize="14dp"></TextView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_margin="4dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="Product Name"
+                                    android:textColor="@color/grey"
+                                    android:textSize="12dp"
+                                    android:textStyle="normal" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="9dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:src="@drawable/info"></ImageView>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/newbg">
+
+                                <EditText
+                                    android:id="@+id/productName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@android:color/transparent"
+                                    android:hint="e.g. tShirt,leather jacket"
+                                    android:inputType="text"
+                                    android:padding="10dp"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/grey3"
+                                    android:textSize="14dp"
+                                    android:textStyle="normal" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_margin="4dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="Product Description"
+                                    android:textColor="@color/grey"
+                                    android:textSize="12dp"
+                                    android:textStyle="normal" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="9dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:src="@drawable/info"></ImageView>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/newbg">
+
+                                <EditText
+                                    android:id="@+id/productDescription"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@android:color/transparent"
+                                    android:hint="e.g. Solid two _fold wallet"
+                                    android:inputType="text"
+                                    android:padding="10dp"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/grey3"
+                                    android:textSize="14dp"
+                                    android:textStyle="normal" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/addNext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:backgroundTint="#E8E7E7"
+                            android:text="Next"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></com.google.android.material.button.MaterialButton>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/basicDetails"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="9dp"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:gravity="center"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/untick">
+                                </ImageView>
+                                <TextView
+                                    android:layout_marginTop="4dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Add"
+                                    android:textStyle="normal"
+                                    android:textColor="@color/grey3"
+                                    android:gravity="center">
+                                </TextView>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Product"
+                                    android:textStyle="normal"
+                                    android:textColor="@color/grey3"
+                                    android:gravity="center">
+                                </TextView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:gravity="center"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/untick">
+                                </ImageView>
+                                <TextView
+                                    android:layout_marginTop="4dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Basic"
+                                    android:textStyle="normal"
+                                    android:textColor="@color/lightblue"
+                                    android:gravity="center">
+                                </TextView>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Details"
+                                    android:textStyle="normal"
+                                    android:textColor="@color/lightblue"
+                                    android:gravity="center">
+                                </TextView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:gravity="center"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/untick">
+                                </ImageView>
+                                <TextView
+                                    android:layout_marginTop="4dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Add"
+                                    android:textStyle="normal"
+                                    android:textColor="@color/grey3"
+                                    android:gravity="center">
+                                </TextView>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Varients(s)"
+                                    android:textStyle="normal"
+                                    android:textColor="@color/grey3"
+                                    android:gravity="center">
+                                </TextView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#C3DEEA"></View>
+
+                <LinearLayout
+                    android:layout_margin="9dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Price &amp; Discount"
+                            android:textSize="15dp"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="6dp">
+                        </TextView>
+                               <LinearLayout
+                                   android:id="@+id/sellPrice"
+                                   android:visibility="visible"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:orientation="vertical">
+                                   <LinearLayout
+                                       android:layout_marginTop="5dp"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="35dp"
+                                       android:orientation="horizontal">
+                                       <TextView
+                                           android:layout_marginStart="50dp"
+                                           android:layout_width="60dp"
+                                           android:gravity="center"
+                                           android:textColor="@color/black"
+                                           android:layout_height="match_parent"
+                                           android:text="Mrp">
+                                       </TextView>
+
+                                       <LinearLayout
+                                           android:layout_width="100dp"
+                                           android:layout_height="30dp"
+                                           android:background="@drawable/newbg">
+                                           <EditText
+                                               android:id="@+id/productMrp"
+                                               android:layout_width="match_parent"
+                                               android:layout_height="match_parent"
+                                               android:background="@color/transparent_white"
+                                               android:gravity="center"
+                                               android:hint="200"
+                                               android:inputType="number"
+                                               android:textColor="@color/black"
+                                               android:textColorHint="@color/grey"
+                                               android:textSize="14dp"></EditText>
+
+                                       </LinearLayout>
+                                   </LinearLayout>
+                                   <LinearLayout
+                                       android:layout_width="match_parent"
+                                       android:layout_height="35dp"
+                                       android:orientation="horizontal">
+                                       <TextView
+                                           android:layout_marginStart="50dp"
+                                           android:layout_width="60dp"
+                                           android:gravity="center"
+                                           android:textColor="@color/black"
+                                           android:layout_height="match_parent"
+                                           android:text="Selling Price">
+                                       </TextView>
+
+                                       <LinearLayout
+                                           android:layout_width="100dp"
+                                           android:layout_height="30dp"
+                                           android:background="@drawable/newbg">
+                                           <EditText
+                                               android:id="@+id/productSelling"
+                                               android:layout_width="match_parent"
+                                               android:layout_height="match_parent"
+                                               android:background="@color/transparent_white"
+                                               android:gravity="center"
+                                               android:hint="100"
+                                               android:inputType="number"
+                                               android:textColor="@color/black"
+                                               android:textColorHint="@color/grey"
+                                               android:textSize="14dp"></EditText>
+
+                                       </LinearLayout>
+                                   </LinearLayout>
+                                   <LinearLayout
+                                       android:layout_marginTop="8dp"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="35dp"
+                                       android:orientation="horizontal">
+                                       <TextView
+                                           android:layout_marginStart="50dp"
+                                           android:layout_width="60dp"
+                                           android:gravity="center"
+                                           android:textColor="@color/black"
+                                           android:layout_height="match_parent"
+                                           android:text="Discount">
+                                       </TextView>
+
+                                       <LinearLayout
+                                           android:layout_width="100dp"
+                                           android:layout_height="30dp"
+                                           android:background="@drawable/newbg">
+                                           <EditText
+                                               android:id="@+id/productDiscount"
+                                               android:layout_width="match_parent"
+                                               android:layout_height="match_parent"
+                                               android:background="@color/transparent_white"
+                                               android:gravity="center"
+                                               android:hint="10%"
+                                               android:inputType="number"
+                                               android:textColor="@color/black"
+                                               android:textColorHint="@color/grey"
+                                               android:textSize="14dp"></EditText>
+
+                                       </LinearLayout>
+                                   </LinearLayout>
+
+                               </LinearLayout>
+                               <LinearLayout
+                                   android:id="@+id/RentPrice"
+                                   android:visibility="gone"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:orientation="vertical">
+                                   <LinearLayout
+                                       android:layout_marginTop="5dp"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="35dp"
+                                       android:orientation="horizontal">
+                                       <TextView
+                                           android:layout_marginStart="50dp"
+                                           android:layout_width="60dp"
+                                           android:gravity="center"
+                                           android:textColor="@color/black"
+                                           android:layout_height="match_parent"
+                                           android:text="Rent Mrp">
+                                       </TextView>
+
+                                       <LinearLayout
+                                           android:layout_width="100dp"
+                                           android:layout_height="30dp"
+                                           android:background="@drawable/newbg">
+                                           <EditText
+                                               android:id="@+id/rentTimeMrp"
+                                               android:layout_width="match_parent"
+                                               android:layout_height="match_parent"
+                                               android:background="@color/transparent_white"
+                                               android:gravity="center"
+                                               android:hint="200"
+                                               android:inputType="number"
+                                               android:textColor="@color/black"
+                                               android:textColorHint="@color/grey"
+                                               android:textSize="14dp"></EditText>
+
+                                       </LinearLayout>
+                                   </LinearLayout>
+                               </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textColor="@color/black"
+                                android:text="No Used Of Manufacturing\n Details"
+                                android:gravity="center">
+                            </TextView>
+                            <LinearLayout
+                                android:layout_marginStart="3dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/newbg">
+                                <EditText
+                                    android:id="@+id/productManufacture"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/transparent_white"
+                                    android:gravity="center"
+                                    android:hint="e.g. Solid two _fold wallet\nwith clean details.Crafted in high-quality"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/grey"
+                                    android:textSize="14dp"></EditText>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp">
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/basicNext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Next"
+                            android:textSize="14dp"
+                            android:textColor="@color/white"
+                            android:backgroundTint="@color/rubyColor"
+                            android:textStyle="bold"
+                            android:layout_marginTop="15dp">
+                        </com.google.android.material.button.MaterialButton>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/addVarients"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="9dp"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:gravity="center"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/untick">
+                                </ImageView>
+                                <TextView
+                                    android:layout_marginTop="4dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Add"
+                                    android:textStyle="normal"
+                                    android:textColor="@color/grey3"
+                                    android:gravity="center">
+                                </TextView>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Product"
+                                    android:textStyle="normal"
+                                    android:textColor="@color/grey3"
+                                    android:gravity="center">
+                                </TextView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:gravity="center"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/untick">
+                                </ImageView>
+                                <TextView
+                                    android:layout_marginTop="4dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Basic"
+                                    android:textStyle="normal"
+                                    android:textColor="@color/grey3"
+                                    android:gravity="center">
+                                </TextView>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Details"
+                                    android:textStyle="normal"
+                                    android:textColor="@color/grey3"
+                                    android:gravity="center">
+                                </TextView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:gravity="center"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/untick">
+                                </ImageView>
+                                <TextView
+                                    android:layout_marginTop="4dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Add"
+                                    android:textStyle="normal"
+                                    android:textColor="@color/lightblue"
+                                    android:gravity="center">
+                                </TextView>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Varients(s)"
+                                    android:textStyle="normal"
+                                    android:textColor="@color/lightblue"
+                                    android:gravity="center">
+                                </TextView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#C3DEEA"></View>
+
+                <LinearLayout
+                    android:layout_margin="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#EFEAE1"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Size Details"
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="9dp"
+                            android:textColor="@color/black"
+                            android:textStyle="normal">
+                        </TextView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center|end"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Add Size Chart"
+                                android:gravity="center_vertical"
+                                android:textStyle="bold"
+                                android:textColor="@color/rubyColor"
+                                android:textSize="14dp">
+                            </TextView>
+                            <LinearLayout
+                                android:layout_width="30dp"
+                                android:gravity="center_vertical"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/ic_baseline_chevron_right_24">
+                                </ImageView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp">
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/goShop"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Review"
+                            android:textSize="14dp"
+                            android:textColor="@color/white"
+                            android:backgroundTint="@color/blue"
+                            android:textStyle="bold"
+                            android:layout_marginTop="15dp">
+                        </com.google.android.material.button.MaterialButton>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_centerInParent="true"
+        android:theme="@style/colSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
